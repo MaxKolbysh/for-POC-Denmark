@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>S-G 3D test</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	    
+	    
+	    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+	    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+	    
+	    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+	    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+	    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+	    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+	    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+	    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+	    <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
+	    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+	    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+	    <script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>
+	    
+	    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+	    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+		
+		
+	</head>
+	<body>
+	
+		
+			
+
+	<div class="container-md shadow  rounded-3 ">
+		<div class="z-1 position-absolute p-3 col-sm">
+			<img class="w-25 h-25  img-fluid" src="/assets/images/logo_RnD.png" >
+		</div>
+		
+		
+
+	
+
+	
+
+	
+		<!-- Use it like any other HTML element -->
+	<model-viewer alt="Wall construction" 
+	
+	src="assets/models/partitionT2.glb"
+	class="mt-3"
+	id="reveal" 
+	loading="eager"
+	ar-modes="webxr scene-viewer quick-look fallback"
+	ar-scale="auto" 
+	ar-placement = "wall"
+	ios-src="assets/models/partitionT2.usdz"
+	ar
+	magic-leap camera-controls  
+	 
+	shadow-intensity="1" 
+	camera-controls touch-action="pan-y" generate-schema
+	auto-rotate
+	>
+	<div id="lazy-load-poster" slot="poster"></div>
+	<!-- <button slot="ar-button" class="ar-button">
+		👋 Activate AR
+	</button> -->
+	
+	</model-viewer>
+	<div>Description: <b>1.800_N01</b></div>
+	<a class="about" href="about.html">credential</a>
+	</div>
+	
+		</div>
+	
+
+			<!-- Loads <model-viewer> for modern browsers: -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+			<!-- Loads <model-viewer> for modern browsers: -->
+			<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
+			<!-- Loads <model-viewer> for old browsers like IE11: -->
+			<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	</body>
+</html>

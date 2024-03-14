@@ -1,0 +1,51 @@
+
+
+  model-viewer {
+    width: 100%;
+    height: 95vh;
+    background-color: #70BCD1;
+    overflow: hidden;
+  }
+
+  model-viewer#reveal {
+      --poster-color: transparent;
+
+  }
+
+model-viewer::part(default-ar-button){
+
+
+    position:absolute;
+    top: 47%;
+    right: 16px;
+
+
+
+
+
+}
+
+  #lazy-load-poster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../posters/831.svg");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .about{
+    font-size: x-small;
+  }
+
+  .arbutton{
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
